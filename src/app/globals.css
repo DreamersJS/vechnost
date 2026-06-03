@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+html { scroll-behavior: smooth; }
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Mobile */
+.client-layout {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 1.5rem;
+  font-size: 1rem; /* base text */
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* Mobile Landscape (small screens wider than tall) */
+@media (min-width: 640px) and (max-width: 767px) {
+  .client-layout {
+    flex-direction: row;
+    gap: 1.5rem;
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* Desktop (medium and up) */
+@media (min-width: 768px) {
+  .client-layout {
+    max-width: 1200px;
+    padding: 2.5rem;
+    font-size: 1.125rem; /* larger text */
+  }
+}

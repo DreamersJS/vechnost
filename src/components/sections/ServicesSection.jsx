@@ -23,7 +23,7 @@ const services = [
   },
   {
     title: "Каменоделски услуги",
-    href: "/kamendelski-uslugi",
+    href: "/kamenodelski-uslugi",
     desc: "Облицовка, паметници и поддръжка",
   },
   {

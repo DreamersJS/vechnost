@@ -152,7 +152,7 @@ export default function ContactPage() {
               Траурни артикули
             </Link>
 
-            <Link href="/kamendelski-uslugi" className="hover:text-black">
+            <Link href="/kamenodelski-uslugi" className="hover:text-black">
               Каменоделски услуги
             </Link>
 

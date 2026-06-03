@@ -35,7 +35,7 @@ const Header = () => {
                         Транспорт
                     </Link>
                     <Link
-                        href="/kamendelski-uslugi"
+                        href="/kamenodelski-uslugi"
                         className="hover:text-gray-900 transition-colors"
                     >
                         Каменоделски услуги
@@ -106,7 +106,7 @@ const Header = () => {
                             Транспорт
                         </Link>
                         <Link
-                            href="/kamendelski-uslugi"
+                            href="/kamenodelski-uslugi"
                             onClick={() => setOpen(false)}
                             className="hover:text-gray-900 transition-colors"
                         >

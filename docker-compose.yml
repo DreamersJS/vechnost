@@ -9,7 +9,7 @@ services:
     volumes:
       - .:/app:cached            # mount host code with caching for better performance
       - /app/node_modules        # anonymous volume for container node_modules
-      - nextjs_build:/app/.next  # store .next in a container volume
+      # - nextjs_build:/app/.next  # store .next in a container volume
     environment:
       NODE_ENV: development
     command: npm run dev

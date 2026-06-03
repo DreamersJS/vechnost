@@ -2,7 +2,7 @@
 export const metadata = {
   title: "Кремации София | Траурна агенция Вечност",
   description:
-    "Организация на кремации в София и България. Денонощни услуги. Кремация на хора и домашни любимци. Цена от 850 EUR.",
+    "Организация на кремации в София. Денонощни услуги. Кремация на хора и домашни любимци. Цена от 850 EUR.",
 }
 
 import Link from "next/link";
@@ -19,7 +19,7 @@ export default function KremaciiSofiaPage() {
 
         {/* INTRO */}
         <p className="mt-4 text-sm text-gray-600 sm:text-base">
-          Организираме кремации в София и цялата страна с пълна грижа и съдействие.
+          Организираме кремации в София с пълна грижа и съдействие.
         </p>
 
         <p className="mt-2 text-sm text-gray-600 sm:text-base">

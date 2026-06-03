@@ -18,7 +18,7 @@ export default function PogrebalniUslugiSofiaPage() {
         </h1>
 
         <p className="mt-4 text-sm text-gray-600 sm:text-base">
-          Организираме пълни погребения в София и страната с денонощна организация и съдействие.
+          Организираме пълни погребения в София с денонощна организация и съдействие.
         </p>
 
         <p className="mt-2 text-sm text-gray-600 sm:text-base">
@@ -74,6 +74,21 @@ export default function PogrebalniUslugiSofiaPage() {
 
           <p className="mt-2 text-sm text-gray-600">
             Съдействаме при издаване на необходимите удостоверения и административни процедури.
+          </p>
+
+        </div>
+      </section>
+
+      {/* PET SERVICES */}
+      <section className="bg-white">
+        <div className="mx-auto max-w-6xl px-4 py-10">
+
+          <h2 className="text-xl font-semibold text-gray-900 sm:text-2xl">
+            Поргебение на домашни любимци
+          </h2>
+
+          <p className="mt-4 text-sm text-gray-600">
+            Предлагаме и поргебение на домашни любимци.
           </p>
 
         </div>

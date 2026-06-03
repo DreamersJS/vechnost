@@ -15,7 +15,7 @@ export default function StructuredData() {
 
         address: {
             "@type": "PostalAddress",
-            streetAddress: "бул. Първа българска Армия 141",
+            streetAddress: "бул. Първа българска Армия 127",
             addressLocality: "София, Орландовци",
             postalCode: "1225",
             addressCountry: "BG",

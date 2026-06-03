@@ -1,8 +1,8 @@
 
 export const metadata = {
-    title: "Погребални услуги София | Организация на погребения Вечност",
-    description:
-        "Пълна организация на погребения в София и Орландовци. Денонощни траурни услуги, дежурен съдебен лекар и цени от 750 EUR.",
+  title: "Погребални услуги София | Организация на погребения Вечност",
+  description:
+    "Пълна организация на погребения в София и Орландовци. Денонощни траурни услуги, дежурен съдебен лекар и цени от 750 EUR.",
 }
 
 import Link from "next/link";
@@ -42,6 +42,14 @@ export default function PogrebalniUslugiSofiaPage() {
 
             <div className="rounded-lg border bg-white p-4">
               Организираме цялостния процес по погребение – транспорт, документи и координация.
+            </div>
+
+            <div className="rounded-lg border bg-white p-4">
+              Осигуряваме съхранение в минусова хладилна камера при необходимост.
+            </div>
+
+            <div className="rounded-lg border bg-white p-4">
+              Изготвяне на некролози и съдействие при организация на траурни ритуали.
             </div>
 
             <div className="rounded-lg border bg-white p-4">

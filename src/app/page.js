@@ -114,6 +114,36 @@ export default function HomePage() {
               </p>
             </details>
 
+            <details className="rounded-lg border border-gray-200 bg-white p-4">
+              <summary className="cursor-pointer text-sm font-medium">
+                Осигурявате ли дежурен съдебен лекар?
+              </summary>
+
+              <p className="mt-2 text-sm text-gray-600">
+                Да, съдействаме с дежурен съдебен лекар при необходимост.
+              </p>
+            </details>
+
+            <details className="rounded-lg border border-gray-200 bg-white p-4">
+              <summary className="cursor-pointer text-sm font-medium">
+                Разполагате ли с хладилна камера?
+              </summary>
+
+              <p className="mt-2 text-sm text-gray-600">
+                Да, осигуряваме съхранение в минусова хладилна камера при необходимост.
+              </p>
+            </details>
+
+            <details className="rounded-lg border border-gray-200 bg-white p-4">
+              <summary className="cursor-pointer text-sm font-medium">
+                Изготвяте ли некролози?
+              </summary>
+
+              <p className="mt-2 text-sm text-gray-600">
+                Да, предлагаме изготвяне на некролози и съдействие при организация на траурни ритуали.
+              </p>
+            </details>
+
           </div>
         </div>
       </section>

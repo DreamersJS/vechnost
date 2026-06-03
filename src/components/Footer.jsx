@@ -25,7 +25,7 @@ const Footer = () => {
             Транспорт
           </Link>
           <Link
-            href="kamenodelski-uslugi"
+            href="/kamenodelski-uslugi"
             className="hover:text-gray-900 transition-colors"
           >
             Каменоделски услуги

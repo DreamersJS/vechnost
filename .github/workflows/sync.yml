@@ -3,6 +3,9 @@ name: Sync Vechnost Website with Upstream
 on:
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   sync:
     runs-on: ubuntu-latest

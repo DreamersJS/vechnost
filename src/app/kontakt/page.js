@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export const metadata = {
@@ -123,6 +124,39 @@ export default function ContactPage() {
             24 часа в денонощието, 7 дни в седмицата
           </p>
 
+        </div>
+      </section>
+
+      <section className="bg-white">
+        <div className="mx-auto max-w-6xl px-4 py-12">
+
+          <h2 className="text-lg font-semibold text-gray-900 sm:text-xl">
+            Траурна агенция Вечност
+          </h2>
+
+          <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-3">
+            <Image
+              src="/images/store1.jpg"
+              alt="Траурна агенция Вечност София"
+              width={600}
+              height={300}
+              className="rounded-lg object-cover"
+            />
+            <Image
+              src="/images/store2.jpg"
+              alt="Траурна агенция Вечност София"
+              width={600}
+              height={300}
+              className="rounded-lg object-cover"
+            />
+            <Image
+              src="/images/store3.jpg"
+              alt="Траурна агенция Вечност София"
+              width={600}
+              height={300}
+              className="rounded-lg object-cover"
+            />
+          </div>
         </div>
       </section>
 

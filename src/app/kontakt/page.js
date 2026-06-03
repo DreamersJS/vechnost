@@ -135,27 +135,34 @@ export default function ContactPage() {
           </h2>
 
           <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-3">
-            <Image
-              src="/images/store1.jpg"
-              alt="Траурна агенция Вечност София"
-              width={600}
-              height={300}
-              className="rounded-lg object-cover"
-            />
-            <Image
-              src="/images/store2.jpg"
-              alt="Траурна агенция Вечност София"
-              width={600}
-              height={300}
-              className="rounded-lg object-cover"
-            />
-            <Image
-              src="/images/store3.jpg"
-              alt="Траурна агенция Вечност София"
-              width={600}
-              height={300}
-              className="rounded-lg object-cover"
-            />
+
+            <div className="relative h-72 overflow-hidden rounded-lg">
+              <Image
+                src="/images/store1.jpg"
+                alt="Траурна агенция Вечност София"
+                fill
+                className="object-cover"
+              />
+            </div>
+
+            <div className="relative h-72 overflow-hidden rounded-lg">
+              <Image
+                src="/images/store2.jpg"
+                alt="Офис на траурна агенция Вечност"
+                fill
+                className="object-cover"
+              />
+            </div>
+
+            <div className="relative h-72 overflow-hidden rounded-lg">
+              <Image
+                src="/images/store3.jpg"
+                alt="Погребални услуги София"
+                fill
+                className="object-cover"
+              />
+            </div>
+
           </div>
         </div>
       </section>

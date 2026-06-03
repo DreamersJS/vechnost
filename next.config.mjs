@@ -1,5 +1,4 @@
-export default {
-    reactStrictMode: false,
-    swcMinify: true, // Optional performance optimization
-  };
-  
+/** @type {import('next').NextConfig} */
+const nextConfig = {};
+
+export default nextConfig;

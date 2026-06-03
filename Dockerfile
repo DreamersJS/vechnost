@@ -1,5 +1,5 @@
-FROM node:20-slim
-#FROM node:20-bullseye-slim
+FROM node:18-slim
+#FROM node:18-bullseye-slim
 WORKDIR /app
 
 COPY package*.json ./

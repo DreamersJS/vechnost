@@ -8,10 +8,6 @@ export default function StructuredData() {
 
         url: "https://vechnost-2024.vercel.app",
         image: "https://vechnost-2024.vercel.app/images/logo.png",
-        
-        alternates: {
-            canonical: "https://vechnost-2024.vercel.app/kremacii-sofia",
-        },
 
         priceRange: "750-850 EUR",
         openingHours: "Mo-Su 00:00-23:59",

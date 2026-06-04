@@ -1,8 +1,8 @@
 
 export const metadata = {
-    title: "Траурни венци и цветя София | Вечност",
+    title: "Траурни венци и цветя София",
     description:
-        "Траурни венци, цветя, жито и погача и артикули за погребения и панахиди.",
+        "Траурни венци, цветя, урни, жито и погача и артикули за погребения и панахиди.",
 }
 
 import Link from "next/link";
@@ -41,21 +41,21 @@ export default function TraurniArtikuliPage() {
             <div className="rounded-lg border bg-white p-5">
               <h3 className="font-medium text-gray-900">Венци</h3>
               <p className="mt-2 text-gray-600">
-                Погребални венци с естествени и изкуствени цветя.
+                Погребални венци.
               </p>
             </div>
 
             <div className="rounded-lg border bg-white p-5">
               <h3 className="font-medium text-gray-900">Цветя</h3>
               <p className="mt-2 text-gray-600">
-                Букети и композиции за траурни церемонии.
+                Букети за траурни церемонии.
               </p>
             </div>
 
             <div className="rounded-lg border bg-white p-5">
               <h3 className="font-medium text-gray-900">Жито</h3>
               <p className="mt-2 text-gray-600">
-                Жито и погача.
+                Жито и погача и кетъринг.
               </p>
             </div>
 
@@ -67,16 +67,9 @@ export default function TraurniArtikuliPage() {
             </div>
 
             <div className="rounded-lg border bg-white p-5">
-              <h3 className="font-medium text-gray-900">Кръстове и надписи</h3>
-              <p className="mt-2 text-gray-600">
-                Индивидуални решения за погребални ритуали.
-              </p>
-            </div>
-
-            <div className="rounded-lg border bg-white p-5">
               <h3 className="font-medium text-gray-900">Аксесоари</h3>
               <p className="mt-2 text-gray-600">
-                Урни, свещи и други траурни принадлежности.
+                Урни и свещи.
               </p>
             </div>
 
@@ -90,11 +83,11 @@ export default function TraurniArtikuliPage() {
         <div className="mx-auto max-w-6xl px-4 py-10">
 
           <h2 className="text-xl font-semibold text-gray-900 sm:text-2xl">
-            Доставка и организация
+            Oрганизация
           </h2>
 
           <p className="mt-4 text-sm text-gray-600">
-            Осигуряваме денонощна доставка на траурни артикули в София и съдействие при организация на погребението.
+            Осигуряваме доставка на траурни артикули в София и съдействие при организация на погребението.
           </p>
 
           <p className="mt-2 text-sm text-gray-600">
@@ -142,15 +135,6 @@ export default function TraurniArtikuliPage() {
           </h2>
 
           <div className="mt-6 space-y-3">
-
-            <details className="rounded-lg border p-4">
-              <summary className="cursor-pointer text-sm font-medium">
-                Предлагате ли доставка в София?
-              </summary>
-              <p className="mt-2 text-sm text-gray-600">
-                Да, осигуряваме денонощна доставка в София и региона.
-              </p>
-            </details>
 
             <details className="rounded-lg border p-4">
               <summary className="cursor-pointer text-sm font-medium">

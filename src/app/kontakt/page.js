@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Контакти | Траурна агенция Вечност София 24/7",
+  title: "Контакти",
   description:
     "Свържете се с траурна агенция Вечност в София. Денонощни погребални услуги, кремации и транспорт.",
 };

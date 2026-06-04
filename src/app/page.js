@@ -2,7 +2,7 @@ import ServicesSection from "@/components/sections/ServicesSection";
 import Image from "next/image";
 
 export const metadata = {
-  title: "Денонощна траурна агенция Вечност | Погребални услуги София",
+  title: "Денонощни погребални услуги София",
   description:
     "Денонощна траурна агенция Вечност в София. Организация на погребения, кремации, транспорт и траурни услуги 24/7 на достъпни цени.",
 }
@@ -92,7 +92,7 @@ export default function HomePage() {
                 Работите ли денонощно?
               </summary>
               <p className="mt-2 text-sm text-gray-600">
-                Да, разполагаме с дежурен екип 24/7 в София.
+                Да, разполагаме с дежурен екип 24/7 в София, отзоваваме се до 45 мин.
               </p>
             </details>
 
@@ -157,7 +157,7 @@ export default function HomePage() {
           </h2>
 
           <div className="mt-6 text-sm text-gray-600 space-y-2">
-            <p>📍 София, Орландовци</p>
+            <p>📍 София, Орландовци, бул. Първа българска Армия 127</p>
             <p>📞 0884 395 622</p>
             <p>📞 0885 413 678 (Viber)</p>
           </div>

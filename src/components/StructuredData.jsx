@@ -6,8 +6,12 @@ export default function StructuredData() {
         name: "Траурна агенция Вечност",
         telephone: "+359884395622",
 
-        url: "https://yourdomain.com",
-        image: "https://yourdomain.com/images/logo.jpg",
+        url: "https://vechnost-2024.vercel.app",
+        image: "https://vechnost-2024.vercel.app/images/logo.png",
+        
+        alternates: {
+            canonical: "https://vechnost-2024.vercel.app/kremacii-sofia",
+        },
 
         priceRange: "750-850 EUR",
         openingHours: "Mo-Su 00:00-23:59",
@@ -31,10 +35,10 @@ export default function StructuredData() {
             "Денонощна траурна агенция в София. Погребални услуги, кремации, транспорт на покойници и услуги за домашни любимци.",
 
 
-        sameAs: [
-            "https://facebook.com/yourpage",
-            "https://instagram.com/yourpage",
-        ],
+        // sameAs: [
+        //     "https://facebook.com/yourpage",
+        //     "https://instagram.com/yourpage",
+        // ],
 
         hasOfferCatalog: {
             "@type": "OfferCatalog",
@@ -98,7 +102,7 @@ export default function StructuredData() {
             ],
         }
     }
-    // https://maps.app.goo.gl/FsHi6aic7pwQMvST7
+
     return (
         <script
             type="application/ld+json"

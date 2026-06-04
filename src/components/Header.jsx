@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const Header = () => {
     const [open, setOpen] = useState(false);
@@ -12,8 +13,14 @@ const Header = () => {
 
                 {/* Desktop nav */}
                 <nav className="hidden gap-6 text-sm text-gray-600 md:flex">
-                    <Link href="/" className="hover:text-gray-900">
-                        Home
+                    <Link href="/" className="flex items-center gap-3">
+                        <Image
+                            src="/images/logo.png"
+                            alt="Траурна агенция Вечност"
+                            width={60}
+                            height={60}
+                            priority
+                        />
                     </Link>
                     <Link
                         href="/pogrebalni-uslugi-sofia"

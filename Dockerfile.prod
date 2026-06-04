@@ -1,0 +1,33 @@
+# ---------- builder ----------
+FROM node:20-bullseye-slim AS builder
+
+WORKDIR /app
+
+COPY package*.json ./
+
+# install ALL deps needed for build
+RUN npm ci --include=optional
+
+COPY . .
+
+ENV NODE_ENV=production
+
+RUN npm run build
+
+
+# ---------- runner ----------
+FROM node:20-bullseye-slim AS runner
+
+WORKDIR /app
+
+ENV NODE_ENV=production
+
+COPY --from=builder /app/package*.json ./
+COPY --from=builder /app/.next ./.next
+COPY --from=builder /app/public ./public
+
+RUN npm ci --omit=dev --include=optional
+
+EXPOSE 3000
+# CMD ["npm", "start"]
+CMD ["npx", "next", "start", "-p", "3000", "-H", "0.0.0.0"]

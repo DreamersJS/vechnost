@@ -48,10 +48,16 @@ const Footer = () => {
           >
             Контакт
           </Link>
+          <Link
+            href="/za-nas"
+            className="hover:text-gray-900 transition-colors"
+          >
+            За нас
+          </Link>
         </nav>
 
         <p className="mt-4 text-center text-xs text-gray-400">
-          © {new Date().getFullYear()} Вечност
+          Траурна агенция Вечност
         </p>
       </div>
     </footer>

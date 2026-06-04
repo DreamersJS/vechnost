@@ -26,7 +26,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
   -v $(pwd):/app \
   -w /app \
   -u $(id -u):$(id -g) \
-  node:18 sh
+  node:20-slim sh
    ```
    1. Inside the container:
    ```bash
@@ -43,3 +43,29 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
    docker-compose up --build
    ```
    You will see link in terminal to localhost ctrl + click it or type it in your address bar
+
+
+
+    // https://maps.app.goo.gl/FsHi6aic7pwQMvST7
+
+   openingHoursSpecification? 
+   Privacy policy? 
+   Contact page (stronger than current)? 
+   breadcrumb schema?
+   contextual links inside text?
+   sameAs: [
+  "https://facebook.com/realpage",
+  "https://instagram.com/realpage",
+  "https://tiktok.com/@realpage"
+]
+email:
+traurna_agencia_vechnost@abv.bg
+Vechnost-2024
+Траурна агенция Вечност
+https://vechnost-2024.vercel.app
+
+blog/articles for SEO expansion
+reviews schema (once you have real reviews)
+
+Google Search Console
+Google Business Profile

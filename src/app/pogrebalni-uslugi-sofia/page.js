@@ -8,8 +8,26 @@ export const metadata = {
 import Link from "next/link";
 
 export default function PogrebalniUslugiSofiaPage() {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: "Погребални услуги София",
+    provider: {
+      "@type": "FuneralHome",
+      name: "Траурна агенция Вечност",
+    },
+    areaServed: "Sofia, Bulgaria",
+  };
   return (
     <main className="bg-white">
+
+      {/* JSON-LD */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(schema),
+        }}
+      />
 
       {/* HERO / H1 */}
       <section className="mx-auto max-w-6xl px-4 py-10 sm:py-16">

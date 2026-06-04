@@ -5,7 +5,6 @@ export default function StructuredData() {
 
         name: "Траурна агенция Вечност",
         telephone: "+359884395622",
-
         url: "https://vechnost-2024.vercel.app",
         image: "https://vechnost-2024.vercel.app/images/logo.png",
 

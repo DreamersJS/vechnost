@@ -214,6 +214,7 @@ export default function HomePage() {
 
           <div className="mt-6 overflow-hidden rounded-lg border border-gray-200">
             <iframe
+              title="Google Maps - София Орландовци"
               src="https://www.google.com/maps?q=Orlandovtsi+Sofia&output=embed"
               className="h-64 w-full"
               loading="lazy"

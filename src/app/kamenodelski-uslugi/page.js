@@ -19,7 +19,7 @@ export default function KamendelskiUslugiPage() {
                 </h1>
 
                 <p className="mt-4 text-sm text-gray-600 sm:text-base">
-                    Изработка, монтаж и поддръжка на надгробни паметници с високо качество и внимание към детайла.
+                    Нашите каменоделски услуги включват изработка, монтаж и поддръжка на надгробни паметници с високо качество и внимание към детайла.
                 </p>
 
                 <p className="mt-2 text-sm text-gray-600 sm:text-base">

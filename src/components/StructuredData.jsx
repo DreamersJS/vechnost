@@ -10,7 +10,16 @@ export default function StructuredData() {
 
         priceRange: "750-850 EUR",
         openingHours: "Mo-Su 00:00-23:59",
-        areaServed: "Sofia, Bulgaria",
+        areaServed: [
+            {
+                "@type": "City",
+                name: "София"
+            },
+            {
+                "@type": "Country",
+                name: "България"
+            }
+        ],
 
         address: {
             "@type": "PostalAddress",
@@ -25,6 +34,19 @@ export default function StructuredData() {
             latitude: "42.717604",
             longitude: "23.339096",
         },
+
+        contactPoint: [
+            {
+                "@type": "ContactPoint",
+                telephone: "+359884395622",
+                contactType: "customer service"
+            },
+            {
+                "@type": "ContactPoint",
+                telephone: "+359885413678",
+                contactType: "customer service"
+            }
+        ],
 
         description:
             "Денонощна траурна агенция в София. Погребални услуги, кремации, транспорт на покойници и услуги за домашни любимци.",

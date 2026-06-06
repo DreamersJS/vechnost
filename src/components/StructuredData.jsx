@@ -52,10 +52,9 @@ export default function StructuredData() {
             "Денонощна траурна агенция в София. Погребални услуги, кремации, транспорт на покойници и услуги за домашни любимци.",
 
 
-        // sameAs: [
-        //     "https://facebook.com/yourpage",
-        //     "https://instagram.com/yourpage",
-        // ],
+        sameAs: [
+            "https://www.facebook.com/profile.php?id=61590728188060",
+        ],
 
         hasOfferCatalog: {
             "@type": "OfferCatalog",

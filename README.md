@@ -69,3 +69,8 @@ reviews schema (once you have real reviews)
 
 Google Search Console
 Google Business Profile
+
+rm -rf .next
+docker compose down -v
+docker compose -f docker-compose.prod.yml build --no-cache
+docker compose -f docker-compose.prod.yml up --remove-orphans

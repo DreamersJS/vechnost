@@ -5,6 +5,7 @@ export const metadata = {
         "Изработка, монтаж и поддръжка на надгробни паметници. Облицовка, почистване и озеленяване на гробни места в София.",
 }
 
+import Image from "next/image";
 import Link from "next/link";
 
 export default function KamendelskiUslugiPage() {
@@ -158,6 +159,47 @@ export default function KamendelskiUslugiPage() {
 
                     </div>
 
+                </div>
+            </section>
+
+            {/* pictures */}
+            <section className="bg-white">
+                <div className="mx-auto max-w-6xl px-4 py-12">
+
+                    <h2 className="text-xl font-semibold text-gray-900 sm:text-2xl">
+                        Траурна агенция Вечност
+                    </h2>
+
+                    <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-3">
+
+                        <div className="relative h-72 overflow-hidden rounded-lg">
+                            <Image
+                                src="/images/kamen1.webp"
+                                alt="Траурна агенция Вечност София"
+                                fill
+                                className="object-contain"
+                            />
+                        </div>
+
+                        <div className="relative h-72 overflow-hidden rounded-lg">
+                            <Image
+                                src="/images/kamen2.webp"
+                                alt="Офис на траурна агенция Вечност"
+                                fill
+                                className="object-contain"
+                            />
+                        </div>
+
+                        <div className="relative h-72 overflow-hidden rounded-lg">
+                            <Image
+                                src="/images/kamen3.webp"
+                                alt="Погребални услуги София"
+                                fill
+                                className="object-contain"
+                            />
+                        </div>
+
+                    </div>
                 </div>
             </section>
 

@@ -138,7 +138,7 @@ export default function ContactPage() {
 
             <div className="relative h-72 overflow-hidden rounded-lg">
               <Image
-                src="/images/store1.jpg"
+                src="/images/store1.webp"
                 alt="Траурна агенция Вечност София"
                 fill
                 className="object-cover"
@@ -147,16 +147,16 @@ export default function ContactPage() {
 
             <div className="relative h-72 overflow-hidden rounded-lg">
               <Image
-                src="/images/store2.jpg"
+                src="/images/store2.webp"
                 alt="Офис на траурна агенция Вечност"
                 fill
-                className="object-cover"
+                className="object-fill"
               />
             </div>
 
             <div className="relative h-72 overflow-hidden rounded-lg">
               <Image
-                src="/images/store3.jpg"
+                src="/images/store3.webp"
                 alt="Погребални услуги София"
                 fill
                 className="object-cover"

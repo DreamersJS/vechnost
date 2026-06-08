@@ -42,7 +42,7 @@ export const metadata = {
     title: "Траурна агенция Вечност",
     description:
       "Денонощни погребални услуги, кремации и транспорт в София.",
-    images: ["/images/og-image.png"],
+    images: ["/images/og-image.webp"],
   },
 
   robots: {

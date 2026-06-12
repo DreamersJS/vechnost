@@ -4,6 +4,9 @@ export const metadata = {
   title: "За нас – Погребални услуги в София",
   description:
     "Траурна агенция Вечност – денонощни погребални услуги, кремации и транспорт в София. Професионална и дискретна помощ 24/7.",
+  alternates: {
+    canonical: "/za-nas",
+  },
 };
 
 export default function AboutPage() {

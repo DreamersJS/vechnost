@@ -2,6 +2,9 @@ export const metadata = {
   title: "Почистване след смърт София",
   description:
     "Професионално почистване след смърт, мазета и тавани и специализирани строителни услуги в София.",
+  alternates: {
+    canonical: "/pochistvane-sled-smart",
+  },
 }
 
 import Link from "next/link";

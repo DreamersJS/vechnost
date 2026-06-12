@@ -1,8 +1,11 @@
 
 export const metadata = {
-    title: "Траурни венци и цветя София",
-    description:
-        "Траурни венци, цветя, урни, жито и погача и артикули за погребения и панахиди.",
+  title: "Траурни венци и цветя София",
+  description:
+    "Траурни венци, цветя, урни, жито и погача и артикули за погребения и панахиди.",
+  alternates: {
+    canonical: "/traurni-artikuli",
+  },
 }
 
 import Link from "next/link";

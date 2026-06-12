@@ -3,6 +3,9 @@ export const metadata = {
     title: "Каменоделски услуги София",
     description:
         "Изработка, монтаж и поддръжка на надгробни паметници. Облицовка, почистване и озеленяване на гробни места в София.",
+    alternates: {
+        canonical: "/kamenodelski-uslugi",
+    },
 }
 
 import Image from "next/image";

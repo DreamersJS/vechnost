@@ -3,6 +3,9 @@ export const metadata = {
   title: "Кремации София | Денонощна организация на кремации",
   description:
     "Организация на кремации в София. Денонощни услуги. Кремация на хора и домашни любимци. Цена от 850 EUR.",
+  alternates: {
+    canonical: "/kremacii-sofia",
+  },
 }
 
 import Link from "next/link";

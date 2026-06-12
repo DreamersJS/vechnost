@@ -5,6 +5,9 @@ export const metadata = {
   title: "Контакти",
   description:
     "Свържете се с траурна агенция Вечност в София. Денонощни погребални услуги, кремации и транспорт.",
+  alternates: {
+    canonical: "/kontakt",
+  },
 };
 
 export default function ContactPage() {

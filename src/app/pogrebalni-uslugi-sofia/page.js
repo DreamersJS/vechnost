@@ -3,6 +3,9 @@ export const metadata = {
   title: "Погребални услуги София",
   description:
     "Пълна организация на погребения в София и Орландовци. Денонощни траурни услуги, дежурен съдебен лекар и цени от 750 EUR.",
+  alternates: {
+    canonical: "/pogrebalni-uslugi-sofia",
+  },
 }
 
 import Link from "next/link";

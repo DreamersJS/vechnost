@@ -15,10 +15,6 @@ export const metadata = {
   description:
     "Денонощна траурна агенция Вечност предлага погребални услуги, кремации и транспорт на покойници в София и Орландовци.",
 
-  alternates: {
-    canonical: "/",
-  },
-
   openGraph: {
     type: "website",
     locale: "bg_BG",

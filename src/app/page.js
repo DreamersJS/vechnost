@@ -5,6 +5,9 @@ export const metadata = {
   title: "Денонощни погребални услуги София",
   description:
     "Денонощна траурна агенция Вечност в София. Организация на погребения, кремации, транспорт и траурни услуги 24/7 на достъпни цени.",
+  alternates: {
+    canonical: "/",
+  },
 }
 
 export default function HomePage() {

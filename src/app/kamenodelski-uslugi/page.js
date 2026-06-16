@@ -1,3 +1,4 @@
+import { FAQSchema, FAQSection } from "@/lib/faq";
 import Image from "next/image";
 import Link from "next/link";
 

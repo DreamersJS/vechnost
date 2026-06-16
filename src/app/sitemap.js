@@ -15,8 +15,8 @@ export default function sitemap() {
 
     const staticPages = routes.map((route) => ({
         url: `${baseUrl}${route}`,
-        // lastModified: new Date().toISOString(),
-        // changeFrequency: "weekly",
+        lastModified: new Date(),
+        changeFrequency: "weekly",
         priority: route === "" ? 1.0 : 0.8,
     }));
 

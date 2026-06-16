@@ -49,6 +49,26 @@ export default function AboutPage() {
         </div>
       </section>
 
+      <section className="bg-white border-t">
+        <div className="mx-auto max-w-5xl px-4 py-12">
+          <h2 className="text-2xl font-semibold text-gray-900">
+            Фирмена информация
+          </h2>
+
+          <p>
+            Траурна агенция Вечност е търговска марка на ВЕЧНОСТ 2024 ЕООД.
+          </p>
+          <div className="mt-6 space-y-2 text-sm text-gray-700">
+            <p><strong>Фирма:</strong> ВЕЧНОСТ 2024 ЕООД</p>
+            <p><strong>ЕИК:</strong> 208065265</p>
+            <p><strong>Седалище:</strong> гр. София, р-н Сердика, ул. Староселска 33</p>
+            <p><strong>Офис за обслужване на клиенти:</strong>
+              бул. Първа българска Армия 127, София 1225</p>
+            <p><strong>Дата на регистрация:</strong> 19.11.2024 г.</p>
+          </div>
+        </div>
+      </section>
+
       {/* SERVICES SEO SECTION */}
       <section className="bg-white">
         <div className="mx-auto max-w-5xl px-4 py-12">
@@ -82,7 +102,7 @@ export default function AboutPage() {
           </h2>
 
           <p className="mt-4 text-sm text-gray-700">
-            Работим в цяла София, включително Орландовци, Център, Люлин, Надежда и всички квартали.
+            Работим в цяла София, включително Орландовци, Център, Люлин, Надежда, Хаджи Димитър и всички квартали.
             Осигуряваме бърз изезд на екип при нужда, независимо от часа.
           </p>
 

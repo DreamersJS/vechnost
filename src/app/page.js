@@ -1,4 +1,5 @@
 import ServicesSection from "@/components/sections/ServicesSection";
+import { FAQSchema, FAQSection } from "@/lib/faq";
 import Image from "next/image";
 
 export const metadata = {
@@ -10,6 +11,45 @@ export const metadata = {
   },
 }
 
+const faqs = [
+  {
+    question: "Работите ли денонощно?",
+    answer:
+      "Да, разполагаме с дежурен екип 24/7 в София, отзоваваме се до 45 мин.",
+  },
+  {
+    question: "Извършвате ли транспорт в чужбина?",
+    answer: "Да, предлагаме международен транспорт на покойници.",
+  },
+  {
+    question: "Колко струва погребение?",
+    answer: "Цените започват от 750 €, според услугите и организацията.",
+  },
+  {
+    question: "Осигурявате ли дежурен съдебен лекар?",
+    answer: "Да, съдействаме с дежурен съдебен лекар при необходимост.",
+  },
+  {
+    question: "Разполагате ли с хладилна камера?",
+    answer:
+      "Да, осигуряваме съхранение в минусова хладилна камера при необходимост.",
+  },
+  {
+    question: "Изготвяте ли некролози?",
+    answer:
+      "Да, предлагаме изготвяне на некролози и съдействие при организация на траурни ритуали.",
+  },
+];
+
+/**
+Какво да направите при настъпила смърт
+Как протича организацията на погребение
+Какви документи са необходими
+Кремация или погребение
+Обслужвани райони в София
+/izdavane-na-smarten-akt
+/nekrolozi-sofia
+ */
 export default function HomePage() {
   return (
     <main className="flex flex-col">
@@ -31,9 +71,16 @@ export default function HomePage() {
           </p>
 
           <section className="bg-white">
+            <p>При настъпила смърт се обадете на:
+              0884 395 622</p>
+
+            <p>Наш екип ще съдейства за всички необходими действия и документи.</p>
+          </section>
+
+          <section className="bg-white">
             <div className="mx-auto max-w-6xl px-4 py-12">
 
-              <h2>Погребални услуги в София</h2>
+              <h2 className="text-xl font-semibold text-gray-900 sm:text-2xl">Погребални услуги в София</h2>
 
               <p>
                 Траурна агенция Вечност предлага денонощни погребални услуги в София и региона.
@@ -105,75 +152,8 @@ export default function HomePage() {
       </section>
 
       {/* FAQ */}
-      <section className="bg-gray-50">
-        <div className="mx-auto max-w-6xl px-4 py-12">
-
-          <h2 className="text-xl font-semibold text-gray-900 sm:text-2xl">
-            Често задавани въпроси
-          </h2>
-
-          <div className="mt-6 space-y-3">
-
-            <details className="rounded-lg border border-gray-200 bg-white p-4">
-              <summary className="cursor-pointer text-sm font-medium">
-                Работите ли денонощно?
-              </summary>
-              <p className="mt-2 text-sm text-gray-600">
-                Да, разполагаме с дежурен екип 24/7 в София, отзоваваме се до 45 мин.
-              </p>
-            </details>
-
-            <details className="rounded-lg border border-gray-200 bg-white p-4">
-              <summary className="cursor-pointer text-sm font-medium">
-                Извършвате ли транспорт в чужбина?
-              </summary>
-              <p className="mt-2 text-sm text-gray-600">
-                Да, предлагаме международен транспорт на покойници.
-              </p>
-            </details>
-
-            <details className="rounded-lg border border-gray-200 bg-white p-4">
-              <summary className="cursor-pointer text-sm font-medium">
-                Колко струва погребение?
-              </summary>
-              <p className="mt-2 text-sm text-gray-600">
-                Цените започват от 750 €, според услугите и организацията.
-              </p>
-            </details>
-
-            <details className="rounded-lg border border-gray-200 bg-white p-4">
-              <summary className="cursor-pointer text-sm font-medium">
-                Осигурявате ли дежурен съдебен лекар?
-              </summary>
-
-              <p className="mt-2 text-sm text-gray-600">
-                Да, съдействаме с дежурен съдебен лекар при необходимост.
-              </p>
-            </details>
-
-            <details className="rounded-lg border border-gray-200 bg-white p-4">
-              <summary className="cursor-pointer text-sm font-medium">
-                Разполагате ли с хладилна камера?
-              </summary>
-
-              <p className="mt-2 text-sm text-gray-600">
-                Да, осигуряваме съхранение в минусова хладилна камера при необходимост.
-              </p>
-            </details>
-
-            <details className="rounded-lg border border-gray-200 bg-white p-4">
-              <summary className="cursor-pointer text-sm font-medium">
-                Изготвяте ли некролози?
-              </summary>
-
-              <p className="mt-2 text-sm text-gray-600">
-                Да, предлагаме изготвяне на некролози и съдействие при организация на траурни ритуали.
-              </p>
-            </details>
-
-          </div>
-        </div>
-      </section>
+      <FAQSchema faqs={faqs} />
+      <FAQSection faqs={faqs} />
 
       {/* CONTACT */}
       <section className="bg-white">
@@ -191,6 +171,7 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* IMG */}
       <section className="bg-white">
         <div className="mx-auto max-w-6xl px-4 py-12">
 

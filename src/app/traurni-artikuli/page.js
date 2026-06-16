@@ -1,3 +1,5 @@
+import { FAQSchema, FAQSection } from "@/lib/faq";
+import Link from "next/link";
 
 export const metadata = {
   title: "Траурни венци и цветя София",
@@ -8,7 +10,16 @@ export const metadata = {
   },
 }
 
-import Link from "next/link";
+const faqs = [
+  {
+    question: "Мога ли да комбинирам с погребение?",
+    answer: "Да, траурните артикули могат да бъдат включени в пълна организация на погребение.",
+  },
+  {
+    question: "Работите ли 24/7?",
+    answer: "Да, дежурен екип е на разположение денонощно.",
+  },
+];
 
 export default function TraurniArtikuliPage() {
   return (
@@ -86,7 +97,7 @@ export default function TraurniArtikuliPage() {
         <div className="mx-auto max-w-6xl px-4 py-10">
 
           <h2 className="text-xl font-semibold text-gray-900 sm:text-2xl">
-            Oрганизация
+            Организация
           </h2>
 
           <p className="mt-4 text-sm text-gray-600">
@@ -130,36 +141,8 @@ export default function TraurniArtikuliPage() {
       </section>
 
       {/* FAQ */}
-      <section className="bg-white">
-        <div className="mx-auto max-w-6xl px-4 py-10">
-
-          <h2 className="text-xl font-semibold text-gray-900 sm:text-2xl">
-            Често задавани въпроси
-          </h2>
-
-          <div className="mt-6 space-y-3">
-
-            <details className="rounded-lg border p-4">
-              <summary className="cursor-pointer text-sm font-medium">
-                Мога ли да комбинирам с погребение?
-              </summary>
-              <p className="mt-2 text-sm text-gray-600">
-                Да, траурните артикули могат да бъдат включени в пълна организация на погребение.
-              </p>
-            </details>
-
-            <details className="rounded-lg border p-4">
-              <summary className="cursor-pointer text-sm font-medium">
-                Работите ли 24/7?
-              </summary>
-              <p className="mt-2 text-sm text-gray-600">
-                Да, дежурен екип е на разположение денонощно.
-              </p>
-            </details>
-
-          </div>
-        </div>
-      </section>
+      <FAQSchema faqs={faqs} />
+      <FAQSection faqs={faqs} />
 
       {/* INTERNAL LINKS */}
       <section className="bg-gray-50">

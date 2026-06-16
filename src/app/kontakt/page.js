@@ -1,3 +1,4 @@
+import Contact from "@/components/sections/Contact";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -25,7 +26,15 @@ export default function ContactPage() {
           Денонощна помощ 24/7. Обадете се по всяко време – реагираме незабавно в София и страната.
         </p>
 
+        <p className="mt-4 text-sm text-gray-600 sm:text-base">
+          Услугите се предоставят от ВЕЧНОСТ 2024 ЕООД, ЕИК 208065265.
+          Дружеството е регистрирано в Република България на 19.11.2024 г.
+        </p>
+
       </section>
+
+      {/* CONTACT */}
+      <Contact />
 
       {/* PRIMARY CTA (MOST IMPORTANT BLOCK) */}
       <section className="bg-gray-50">
@@ -198,6 +207,10 @@ export default function ContactPage() {
 
             <Link href="/kamenodelski-uslugi" className="hover:text-black">
               Каменоделски услуги
+            </Link>
+
+            <Link href="/za-nas" className="hover:text-black">
+              За нас
             </Link>
 
           </div>

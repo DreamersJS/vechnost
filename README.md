@@ -58,6 +58,9 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
   "https://instagram.com/realpage",
   "https://tiktok.com/@realpage"
 ]
+
+ВЕЧНОСТ 2024 ЕООД 
+“VECHNOST 2024” Ltd.
 email:
 traurna_agencia_vechnost@abv.bg
 Vechnost-2024

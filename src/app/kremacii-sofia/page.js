@@ -1,3 +1,6 @@
+import CTA from "@/components/sections/CTA";
+import InternalLinks from "@/components/sections/InternalLinks";
+import { FAQSchema, FAQSection } from "@/lib/faq";
 
 export const metadata = {
   title: "Кремации София | Денонощна организация на кремации",
@@ -8,7 +11,47 @@ export const metadata = {
   },
 }
 
-import Link from "next/link";
+const faqs = [
+  {
+    question: "Колко струва кремация в София?",
+    answer: "Цените започват от 850 €, според избраните услуги.",
+  },
+  {
+    question: "Работите ли 24/7?",
+    answer: "Да, имаме дежурен екип денонощно.",
+  },
+  {
+    question: "Съдействате ли с документи?",
+    answer: "Да, поемаме цялата административна част.",
+  },
+  {
+    question: "Извършвате ли транспорт?",
+    answer: "Да, в България и чужбина.",
+  },
+  {
+    question: "Предлагате ли кремации на домашни любимци?",
+    answer: "Да, извършваме кремации на домашни любимци.",
+  },
+];
+
+const links = [
+  {
+    link: "/",
+    name: "← Начало"
+  },
+  {
+    link: "/pogrebalni-uslugi-sofia",
+    name: "Погребални услуги"
+  },
+  {
+    link: "/transport-pokoinici",
+    name: "Транспорт на покойник"
+  },
+  {
+    link: "/traurni-artikuli",
+    name: "Траурни артикули"
+  },
+]
 
 export default function KremaciiSofiaPage() {
   const schema = {
@@ -19,7 +62,6 @@ export default function KremaciiSofiaPage() {
       "@type": "FuneralHome",
       name: "Траурна агенция Вечност",
     },
-    areaServed: "Sofia, Bulgaria",
   };
 
   return (
@@ -156,118 +198,14 @@ export default function KremaciiSofiaPage() {
       </section>
 
       {/* FAQ */}
-      <section className="bg-white">
-        <div className="mx-auto max-w-6xl px-4 py-10">
-
-          <h2 className="text-xl font-semibold text-gray-900 sm:text-2xl">
-            Често задавани въпроси
-          </h2>
-
-          <div className="mt-6 space-y-3">
-
-            <details className="rounded-lg border p-4">
-              <summary className="cursor-pointer text-sm font-medium">
-                Колко струва кремация в София?
-              </summary>
-              <p className="mt-2 text-sm text-gray-600">
-                Цените започват от 850 €, според избраните услуги.
-              </p>
-            </details>
-
-            <details className="rounded-lg border p-4">
-              <summary className="cursor-pointer text-sm font-medium">
-                Работите ли 24/7?
-              </summary>
-              <p className="mt-2 text-sm text-gray-600">
-                Да, имаме дежурен екип денонощно.
-              </p>
-            </details>
-
-            <details className="rounded-lg border p-4">
-              <summary className="cursor-pointer text-sm font-medium">
-                Съдействате ли с документи?
-              </summary>
-              <p className="mt-2 text-sm text-gray-600">
-                Да, поемаме цялата административна част.
-              </p>
-            </details>
-
-            <details className="rounded-lg border p-4">
-              <summary className="cursor-pointer text-sm font-medium">
-                Извършвате ли транспорт?
-              </summary>
-              <p className="mt-2 text-sm text-gray-600">
-                Да, в България и чужбина.
-              </p>
-            </details>
-
-            <details className="rounded-lg border p-4">
-              <summary className="cursor-pointer text-sm font-medium">
-                Предлагате ли кремации на домашни любимци?
-              </summary>
-              <p className="mt-2 text-sm text-gray-600">
-                Да, извършваме кремации на домашни любимци.
-              </p>
-            </details>
-
-          </div>
-        </div>
-      </section>
+      <FAQSchema faqs={faqs} />
+      <FAQSection faqs={faqs} />
 
       {/* CTA */}
-      <section className="bg-gray-50">
-        <div className="mx-auto max-w-6xl px-4 py-12 text-center">
-
-          <h2 className="text-xl font-semibold text-gray-900">
-            Свържете се с нас 24/7
-          </h2>
-
-          <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:justify-center">
-            <a
-              href="tel:+359884395622"
-              className="rounded-lg bg-black px-6 py-3 text-sm text-white"
-            >
-              📞 0884 395 622
-            </a>
-
-            <a
-              href="viber://chat?number=+359885413678"
-              className="rounded-lg border border-gray-300 px-6 py-3 text-sm text-gray-700"
-            >
-              💬 Viber
-            </a>
-          </div>
-        </div>
-      </section>
+      <CTA />
 
       {/* INTERNAL LINKS */}
-      <section className="bg-white">
-        <div className="mx-auto max-w-6xl px-4 py-10">
-
-          <h2 className="text-lg font-semibold text-gray-900">
-            Други услуги
-          </h2>
-
-          <div className="mt-4 flex flex-col gap-2 text-sm text-gray-600">
-            <Link href="/" className="hover:text-black">
-              ← Начало
-            </Link>
-
-            <Link href="/pogrebalni-uslugi-sofia" className="hover:text-black">
-              Погребални услуги
-            </Link>
-
-            <Link href="/transport-pokoinici" className="hover:text-black">
-              Транспорт на покойник
-            </Link>
-
-            <Link href="/traurni-artikuli" className="hover:text-black">
-              Траурни артикули
-            </Link>
-          </div>
-
-        </div>
-      </section>
+      <InternalLinks links={links} />
 
     </main>
   );

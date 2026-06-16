@@ -1,3 +1,5 @@
+import Image from "next/image";
+import Link from "next/link";
 
 export const metadata = {
     title: "Каменоделски услуги София",
@@ -8,9 +10,31 @@ export const metadata = {
     },
 }
 
-import Image from "next/image";
-import Link from "next/link";
-
+const faqs = [
+    {
+        question: "Извършвате ли поддръжка на гробни места?",
+        answer: "Да, предлагаме почистване, озеленяване и цялостна поддръжка на гробни места в София и региона.",
+    },
+    {
+        question: "Изработвате ли надгробни паметници по индивидуален проект?",
+        answer:
+            "Да, изработваме надгробни паметници по индивидуален дизайн от различни видове камък.",
+    },
+    {
+        question: "Предлагате ли монтаж на паметници?",
+        answer:
+            "Да, извършваме професионален монтаж на надгробни паметници и облицовки.",
+    },
+];
+/**
+Колко време отнема изработката на паметник?
+Какви материали използвате?
+Извършвате ли реставрация на стари паметници?
+Работите ли в цяла София?
+Работите ли извън София?
+Предлагате ли облицовка на гробни места?
+Може ли да получите безплатна консултация?
+ */
 export default function KamendelskiUslugiPage() {
     return (
         <main className="bg-white">
@@ -205,6 +229,10 @@ export default function KamendelskiUslugiPage() {
                     </div>
                 </div>
             </section>
+
+            {/* FAQ */}
+            <FAQSchema faqs={faqs} />
+            <FAQSection faqs={faqs} />
 
             {/* INTERNAL LINKS */}
             <section className="bg-gray-50">

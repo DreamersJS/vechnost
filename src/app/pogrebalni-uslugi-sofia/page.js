@@ -1,3 +1,6 @@
+import CTA from "@/components/sections/CTA";
+import { FAQSchema, FAQSection } from "@/lib/faq";
+import Link from "next/link";
 
 export const metadata = {
   title: "Погребални услуги София",
@@ -8,7 +11,47 @@ export const metadata = {
   },
 }
 
-import Link from "next/link";
+const faqs = [
+  {
+    question: "Работите ли денонощно?",
+    answer:
+      "Да, реагираме 24/7 при спешни случаи в София и региона. Отзоваваме се до 45 мин.",
+  },
+  {
+    question: "Извършвате ли транспорт в чужбина?",
+    answer: "Да, предлагаме международен транспорт на покойници.",
+  },
+  {
+    question: "Колко струва погребение?",
+    answer: "Цените започват от 750 €, според услугите и организацията.",
+  },
+  {
+    question: "Осигурявате ли дежурен съдебен лекар?",
+    answer: "Да, съдействаме с дежурен съдебен лекар при необходимост.",
+  },
+  {
+    question: "Разполагате ли с хладилна камера?",
+    answer:
+      "Да, осигуряваме съхранение в минусова хладилна камера при необходимост.",
+  },
+  {
+    question: "Изготвяте ли некролози?",
+    answer:
+      "Да, предлагаме изготвяне на некролози и съдействие при организация на траурни ритуали.",
+  },
+  {
+    question: "Помагате ли с документи?",
+    answer: "Да, съдействаме за всички необходими документи.",
+  },
+  {
+    question: "Помагате ли с смъртен акт?",
+    answer: "Да, съдействаме за всички необходими документи.",
+  },
+  {
+    question: "Извършвате ли погребение на животни?",
+    answer: "Да, предлагаме и погребение на домашни любимци.",
+  },
+];
 
 export default function PogrebalniUslugiSofiaPage() {
   const schema = {
@@ -145,32 +188,11 @@ export default function PogrebalniUslugiSofiaPage() {
       </section>
 
       {/* CTA */}
-      <section className="bg-white">
-        <div className="mx-auto max-w-6xl px-4 py-12 text-center">
+      <CTA />
 
-          <h2 className="text-xl font-semibold text-gray-900">
-            Свържете се с нас 24/7
-          </h2>
-
-          <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:justify-center">
-
-            <a
-              href="tel:+359884395622"
-              className="rounded-lg bg-black px-6 py-3 text-sm text-white"
-            >
-              📞 0884 395 622
-            </a>
-
-            <a
-              href="tel:+359885413678"
-              className="rounded-lg border border-gray-300 px-6 py-3 text-sm text-gray-700"
-            >
-              📞 0885 413 678
-            </a>
-
-          </div>
-        </div>
-      </section>
+      {/* FAQ */}
+      <FAQSchema faqs={faqs} />
+      <FAQSection faqs={faqs} />
 
       {/* INTERNAL LINKS */}
       <section className="bg-gray-50">

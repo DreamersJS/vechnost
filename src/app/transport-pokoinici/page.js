@@ -1,3 +1,5 @@
+import { FAQSchema, FAQSection } from "@/lib/faq";
+import Link from "next/link";
 
 export const metadata = {
   title: "Транспорт на покойници | България и чужбина",
@@ -8,7 +10,26 @@ export const metadata = {
   },
 }
 
-import Link from "next/link";
+const faqs = [
+  {
+    question: "Извършвате ли международен транспорт?",
+    answer:
+      "Да, осигуряваме транспорт на покойници до и от чужбина.",
+  },
+  {
+    question: "Работите ли 24/7?",
+    answer: "Да, дежурен екип е на разположение денонощно.",
+  },
+  {
+    question: "Помагате ли с документи?",
+    answer: "Да, съдействаме за всички необходими документи за транспорт.",
+  },
+  {
+    question: "Колко бързо реагирате?",
+    answer:
+      "Реагираме незабавно след обаждане 24/7.",
+  },
+];
 
 export default function TransportPokoiniciPage() {
   return (
@@ -128,54 +149,8 @@ export default function TransportPokoiniciPage() {
       </section>
 
       {/* FAQ */}
-      <section className="bg-white">
-        <div className="mx-auto max-w-6xl px-4 py-10">
-
-          <h2 className="text-xl font-semibold text-gray-900 sm:text-2xl">
-            Често задавани въпроси
-          </h2>
-
-          <div className="mt-6 space-y-3">
-
-            <details className="rounded-lg border p-4">
-              <summary className="cursor-pointer text-sm font-medium">
-                Извършвате ли международен транспорт?
-              </summary>
-              <p className="mt-2 text-sm text-gray-600">
-                Да, осигуряваме транспорт на покойници до и от чужбина.
-              </p>
-            </details>
-
-            <details className="rounded-lg border p-4">
-              <summary className="cursor-pointer text-sm font-medium">
-                Работите ли 24/7?
-              </summary>
-              <p className="mt-2 text-sm text-gray-600">
-                Да, дежурен екип е на разположение денонощно.
-              </p>
-            </details>
-
-            <details className="rounded-lg border p-4">
-              <summary className="cursor-pointer text-sm font-medium">
-                Помагате ли с документи?
-              </summary>
-              <p className="mt-2 text-sm text-gray-600">
-                Да, съдействаме за всички необходими документи за транспорт.
-              </p>
-            </details>
-
-            <details className="rounded-lg border p-4">
-              <summary className="cursor-pointer text-sm font-medium">
-                Колко бързо реагирате?
-              </summary>
-              <p className="mt-2 text-sm text-gray-600">
-                Реагираме незабавно след обаждане 24/7.
-              </p>
-            </details>
-
-          </div>
-        </div>
-      </section>
+      <FAQSchema faqs={faqs} />
+      <FAQSection faqs={faqs} />
 
       {/* CTA */}
       <section className="bg-gray-50">

@@ -1,3 +1,6 @@
+import { FAQSchema, FAQSection } from "@/lib/faq";
+import Link from "next/link";
+
 export const metadata = {
   title: "Почистване след смърт София",
   description:
@@ -7,7 +10,21 @@ export const metadata = {
   },
 }
 
-import Link from "next/link";
+const faqs = [
+  {
+    question: "Работите ли денонощно?",
+    answer:
+      "Да, реагираме 24/7 при спешни случаи в София и региона. Отзоваваме се до 45 мин.",
+  },
+  {
+    question: "Извършвате ли дезинфекция?",
+    answer: "Да, използваме специализирани препарати за пълна дезинфекция.",
+  },
+  {
+    question: "Колко време отнема почистването?",
+    answer: "Зависи от ситуацията, но обикновено се извършва в рамките на ден.",
+  },
+];
 
 export default function PochistvaneSledSmartPage() {
   return (
@@ -150,46 +167,8 @@ export default function PochistvaneSledSmartPage() {
       </section>
 
       {/* FAQ */}
-      <section className="bg-gray-50">
-        <div className="mx-auto max-w-6xl px-4 py-10">
-
-          <h2 className="text-xl font-semibold text-gray-900 sm:text-2xl">
-            Често задавани въпроси
-          </h2>
-
-          <div className="mt-6 space-y-3">
-
-            <details className="rounded-lg border bg-white p-4">
-              <summary className="cursor-pointer text-sm font-medium">
-                Работите ли денонощно?
-              </summary>
-              <p className="mt-2 text-sm text-gray-600">
-                Да, реагираме 24/7 при спешни случаи в София и региона.
-              </p>
-            </details>
-
-            <details className="rounded-lg border bg-white p-4">
-              <summary className="cursor-pointer text-sm font-medium">
-                Извършвате ли дезинфекция?
-              </summary>
-              <p className="mt-2 text-sm text-gray-600">
-                Да, използваме специализирани препарати за пълна дезинфекция.
-              </p>
-            </details>
-
-            <details className="rounded-lg border bg-white p-4">
-              <summary className="cursor-pointer text-sm font-medium">
-                Колко време отнема почистването?
-              </summary>
-              <p className="mt-2 text-sm text-gray-600">
-                Зависи от ситуацията, но обикновено се извършва в рамките на ден.
-              </p>
-            </details>
-
-          </div>
-
-        </div>
-      </section>
+      <FAQSchema faqs={faqs} />
+      <FAQSection faqs={faqs} />
 
       {/* INTERNAL LINKS */}
       <section className="bg-white">

@@ -70,7 +70,7 @@ export default function HomePage() {
             24/7 дежурен екип | Достойно изпращане на близки
           </p>
 
-          <section className="bg-white">
+          <section className="mt-4 bg-white">
             <p>При настъпила смърт се обадете на:
               0884 395 622</p>
 

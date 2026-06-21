@@ -220,6 +220,10 @@ export default function PogrebalniUslugiSofiaPage() {
               Траурни артикули
             </Link>
 
+            <Link href="/izdavane-na-smarten-akt" className="hover:text-black">
+              Смъртен акт
+            </Link>
+
           </div>
 
         </div>

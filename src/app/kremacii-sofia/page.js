@@ -51,6 +51,10 @@ const links = [
     link: "/traurni-artikuli",
     name: "Траурни артикули"
   },
+  {
+    link: "/izdavane-na-smarten-akt",
+    name: "Смъртен акт"
+  }
 ]
 
 export default function KremaciiSofiaPage() {

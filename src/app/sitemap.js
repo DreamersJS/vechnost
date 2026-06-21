@@ -10,7 +10,8 @@ export default function sitemap() {
         "/kamenodelski-uslugi",
         "/pochistvane-sled-smart",
         "/traurni-artikuli",
-        "/za-nas"
+        "/za-nas",
+        "/izdavane-na-smarten-akt"
     ];
 
     const staticPages = routes.map((route) => ({

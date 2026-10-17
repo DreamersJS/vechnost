@@ -21,6 +21,11 @@ const faqs = [
   },
 ];
 
+/**
+ * 
+колко големи се венците
+ */
+
 export default function TraurniArtikuliPage() {
   return (
     <main className="bg-white">

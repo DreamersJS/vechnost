@@ -1,5 +1,6 @@
+import CTA from "@/components/sections/CTA";
+import InternalLinks from "@/components/sections/InternalLinks";
 import { FAQSchema, FAQSection } from "@/lib/faq";
-import Link from "next/link";
 
 export const metadata = {
   title: "Траурни венци и цветя София",
@@ -20,6 +21,25 @@ const faqs = [
     answer: "Да, дежурен екип е на разположение денонощно.",
   },
 ];
+
+const links = [
+  {
+    link: "/",
+    name: "← Начало"
+  },
+  {
+    link: "/pogrebalni-uslugi-sofia",
+    name: "Погребални услуги"
+  },
+  {
+    link: "/kremacii-sofia",
+    name: "Кремации"
+  },
+  {
+    link: "/transport-pokoinici",
+    name: "Транспорт на покойник"
+  },
+]
 
 /**
  * 
@@ -117,68 +137,14 @@ export default function TraurniArtikuliPage() {
       </section>
 
       {/* CTA */}
-      <section className="bg-gray-50">
-        <div className="mx-auto max-w-6xl px-4 py-12 text-center">
-
-          <h2 className="text-xl font-semibold text-gray-900">
-            Свържете се с нас 24/7
-          </h2>
-
-          <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:justify-center">
-
-            <a
-              href="tel:+359884395622"
-              className="rounded-lg bg-black px-6 py-3 text-sm text-white"
-            >
-              📞 0884 395 622
-            </a>
-
-            <a
-              href="tel:+359885413678"
-              className="rounded-lg border border-gray-300 px-6 py-3 text-sm text-gray-700"
-            >
-              📞 0885 413 678
-            </a>
-
-          </div>
-
-        </div>
-      </section>
+      <CTA />
 
       {/* FAQ */}
       <FAQSchema faqs={faqs} />
       <FAQSection faqs={faqs} />
 
       {/* INTERNAL LINKS */}
-      <section className="bg-gray-50">
-        <div className="mx-auto max-w-6xl px-4 py-10">
-
-          <h2 className="text-lg font-semibold text-gray-900">
-            Други услуги
-          </h2>
-
-          <div className="mt-4 flex flex-col gap-2 text-sm text-gray-600">
-
-            <Link href="/" className="hover:text-black">
-              ← Начало
-            </Link>
-
-            <Link href="/pogrebalni-uslugi-sofia" className="hover:text-black">
-              Погребални услуги
-            </Link>
-
-            <Link href="/kremacii-sofia" className="hover:text-black">
-              Кремации
-            </Link>
-
-            <Link href="/transport-pokoinici" className="hover:text-black">
-              Транспорт на покойник
-            </Link>
-
-          </div>
-
-        </div>
-      </section>
+      <InternalLinks links={links} />
 
     </main>
   );

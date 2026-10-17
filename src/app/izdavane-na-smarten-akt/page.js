@@ -1,6 +1,6 @@
 import CTA from "@/components/sections/CTA";
+import InternalLinks from "@/components/sections/InternalLinks";
 import { FAQSchema, FAQSection } from "@/lib/faq";
-import Link from "next/link";
 
 export const metadata = {
     title: "Издаване на смъртен акт в София",
@@ -53,6 +53,25 @@ const faqs = [
             "Да, при смърт в болница лечебното заведение подготвя необходимите медицински документи, въз основа на които се издава смъртният акт.",
     },
 ];
+
+const links = [
+    {
+        link: "/",
+        name: "← Начало"
+    },
+    {
+        link: "/pogrebalni-uslugi-sofia",
+        name: "Погребални услуги"
+    },
+    {
+        link: "/kremacii-sofia",
+        name: "Кремации"
+    },
+    {
+        link: "/transport-pokoinici",
+        name: "Транспорт на покойник"
+    },
+]
 
 export default function Page() {
     return (
@@ -187,35 +206,7 @@ export default function Page() {
             <FAQSection faqs={faqs} />
 
             {/* INTERNAL LINKS */}
-            <section className="bg-gray-50">
-                <div className="mx-auto max-w-6xl px-4 py-10">
-
-                    <h2 className="text-lg font-semibold text-gray-900">
-                        Други услуги
-                    </h2>
-
-                    <div className="mt-4 flex flex-col gap-2 text-sm text-gray-600">
-
-                        <Link href="/" className="hover:text-black">
-                            ← Начало
-                        </Link>
-
-                        <Link href="/pogrebalni-uslugi-sofia" className="hover:text-black">
-                            Погребални услуги
-                        </Link>
-
-                        <Link href="/kremacii-sofia" className="hover:text-black">
-                            Кремации
-                        </Link>
-
-                        <Link href="/transport-pokoinici" className="hover:text-black">
-                            Транспорт на покойник
-                        </Link>
-
-                    </div>
-
-                </div>
-            </section>
+            <InternalLinks links={links} />
 
         </main>
 

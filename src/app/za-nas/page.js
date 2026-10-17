@@ -1,4 +1,5 @@
-import Link from "next/link";
+import CTA from "@/components/sections/CTA";
+import InternalLinks from "@/components/sections/InternalLinks";
 
 export const metadata = {
   title: "За нас – Погребални услуги в София",
@@ -8,6 +9,37 @@ export const metadata = {
     canonical: "/za-nas",
   },
 };
+
+const links = [
+  {
+    link: "/",
+    name: "← Начало"
+  },
+  {
+    link: "/pogrebalni-uslugi-sofia",
+    name: "Погребални услуги София"
+  },
+  {
+    link: "/kremacii-sofia",
+    name: "Кремации София"
+  },
+  {
+    link: "/transport-pokoinici",
+    name: "Транспорт на покойник"
+  },
+  {
+    link: "/traurni-artikuli",
+    name: "Траурни артикули"
+  },
+  {
+    link: "/kamenodelski-uslugi",
+    name: "Каменоделски услуги"
+  },
+  {
+    link: "/izdavane-na-smarten-akt",
+    name: "Смъртен акт"
+  }
+]
 
 export default function AboutPage() {
   return (
@@ -164,56 +196,10 @@ export default function AboutPage() {
       </section>
 
       {/* CTA */}
-      <section className="bg-white">
-        <div className="mx-auto max-w-5xl px-4 py-12 text-center">
-
-          <h2 className="text-2xl font-semibold text-gray-900">
-            Свържете се с нас 24/7
-          </h2>
-
-          <p className="mt-3 text-sm text-gray-600">
-            Незабавна реакция при спешни случаи в София и страната
-          </p>
-
-          <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:justify-center">
-
-            <a
-              href="tel:+359884395622"
-              className="rounded-lg bg-black px-6 py-3 text-sm text-white"
-            >
-              📞 0884 395 622
-            </a>
-
-            <a
-              href="/kontakt"
-              className="rounded-lg border px-6 py-3 text-sm text-gray-700"
-            >
-              Контакт форма
-            </a>
-
-          </div>
-
-        </div>
-      </section>
+      <CTA />
 
       {/* INTERNAL LINKS */}
-      <section className="bg-gray-50">
-        <div className="mx-auto max-w-5xl px-4 py-10 text-center">
-
-          <h2 className="text-lg font-semibold text-gray-900">
-            Нашите услуги
-          </h2>
-
-          <div className="mt-4 flex flex-col gap-2 text-sm text-gray-600">
-
-            <Link href="/pogrebalni-uslugi-sofia">Погребални услуги София</Link>
-            <Link href="/kremacii-sofia">Кремации София</Link>
-            <Link href="/transport-pokoinici">Транспорт на покойници</Link>
-
-          </div>
-
-        </div>
-      </section>
+      <InternalLinks links={links} />
 
     </main>
   );

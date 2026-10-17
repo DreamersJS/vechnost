@@ -201,12 +201,12 @@ export default function KremaciiSofiaPage() {
         </div>
       </section>
 
+      {/* CTA */}
+      <CTA />
+
       {/* FAQ */}
       <FAQSchema faqs={faqs} />
       <FAQSection faqs={faqs} />
-
-      {/* CTA */}
-      <CTA />
 
       {/* INTERNAL LINKS */}
       <InternalLinks links={links} />

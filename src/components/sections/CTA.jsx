@@ -25,7 +25,7 @@ const CTA = () => {
 
                     <a
                         href="viber://chat?number=+359885413678"
-                        className="rounded-lg border border-gray-300 px-6 py-3 text-sm text-gray-700"
+                        className="rounded-lg bg-purple-600 px-6 py-3 text-sm text-white"
                     >
                         💬 Viber
                     </a>

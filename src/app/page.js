@@ -1,3 +1,5 @@
+import CTA from "@/components/sections/CTA";
+import Contact from "@/components/sections/Contact";
 import ServicesSection from "@/components/sections/ServicesSection";
 import { FAQSchema, FAQSection } from "@/lib/faq";
 import Image from "next/image";
@@ -102,21 +104,7 @@ export default function HomePage() {
           </section>
 
           {/* CTA */}
-          <div className="mt-6 flex flex-col gap-3 sm:flex-row">
-            <a
-              href="tel:+359884395622"
-              className="rounded-lg bg-black px-5 py-3 text-center text-sm text-white"
-            >
-              📞 0884 395 622
-            </a>
-
-            <a
-              href="tel:+359885413678"
-              className="rounded-lg border border-gray-300 px-5 py-3 text-center text-sm text-gray-700"
-            >
-              📞 0885 413 678
-            </a>
-          </div>
+          <CTA />
         </div>
       </section>
 
@@ -156,20 +144,7 @@ export default function HomePage() {
       <FAQSection faqs={faqs} />
 
       {/* CONTACT */}
-      <section className="bg-white">
-        <div className="mx-auto max-w-6xl px-4 py-12">
-
-          <h2 className="text-xl font-semibold text-gray-900 sm:text-2xl">
-            Контакт
-          </h2>
-
-          <div className="mt-6 text-sm text-gray-600 space-y-2">
-            <p>📍 София, Орландовци, бул. Първа българска Армия 127</p>
-            <p>📞 0884 395 622</p>
-            <p>📞 0885 413 678 (Viber)</p>
-          </div>
-        </div>
-      </section>
+      <Contact />
 
       {/* IMG */}
       <section className="bg-white">

@@ -1,6 +1,6 @@
 import Contact from "@/components/sections/Contact";
+import InternalLinks from "@/components/sections/InternalLinks";
 import Image from "next/image";
-import Link from "next/link";
 
 export const metadata = {
   title: "Контакти",
@@ -10,6 +10,37 @@ export const metadata = {
     canonical: "/kontakt",
   },
 };
+
+const links = [
+  {
+    link: "/",
+    name: "← Начало"
+  },
+  {
+    link: "/pogrebalni-uslugi-sofia",
+    name: "Погребални услуги"
+  },
+  {
+    link: "/kremacii-sofia",
+    name: "Кремации"
+  },
+  {
+    link: "/transport-pokoinici",
+    name: "Транспорт на покойник"
+  },
+  {
+    link: "/traurni-artikuli",
+    name: "Траурни артикули"
+  },
+  {
+    link: "/kamenodelski-uslugi",
+    name: "Каменоделски услуги"
+  },
+  {
+    link: "/za-nas",
+    name: "За нас"
+  },
+]
 
 export default function ContactPage() {
   return (
@@ -54,7 +85,7 @@ export default function ContactPage() {
               href="tel:+359884395622"
               className="rounded-lg bg-black px-6 py-4 text-sm text-white font-medium"
             >
-              📞 0884 395 622 (Денонощно)
+              📞 0884 395 622
             </a>
 
             <a
@@ -139,6 +170,7 @@ export default function ContactPage() {
         </div>
       </section>
 
+      {/*IMAGES */}
       <section className="bg-white">
         <div className="mx-auto max-w-6xl px-4 py-12">
 
@@ -179,44 +211,10 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* INTERNAL LINKS (SOFT SEO SUPPORT) */}
-      <section className="bg-gray-50">
-        <div className="mx-auto max-w-4xl px-4 py-10">
+      {/*FAQ */}
 
-          <h2 className="text-lg font-semibold text-gray-900 text-center">
-            Нашите услуги
-          </h2>
-
-          <div className="mt-6 flex flex-col gap-2 text-sm text-gray-600 text-center">
-
-            <Link href="/pogrebalni-uslugi-sofia" className="hover:text-black">
-              Погребални услуги
-            </Link>
-
-            <Link href="/kremacii-sofia" className="hover:text-black">
-              Кремации
-            </Link>
-
-            <Link href="/transport-pokoinici" className="hover:text-black">
-              Транспорт на покойник
-            </Link>
-
-            <Link href="/traurni-artikuli" className="hover:text-black">
-              Траурни артикули
-            </Link>
-
-            <Link href="/kamenodelski-uslugi" className="hover:text-black">
-              Каменоделски услуги
-            </Link>
-
-            <Link href="/za-nas" className="hover:text-black">
-              За нас
-            </Link>
-
-          </div>
-
-        </div>
-      </section>
+      {/* INTERNAL LINKS */}
+      <InternalLinks links={links} />
 
     </main>
   );
